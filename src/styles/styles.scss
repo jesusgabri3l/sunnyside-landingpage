@@ -1,0 +1,46 @@
+@import "normalize";
+@import "components/variables";
+@import "components/header/header";
+@import "components/services/services";
+
+*{
+  box-sizing: border-box;
+  font-family: 'Barlow', sans-serif;
+}
+.flex{
+  display: flex;
+  &--column{
+    flex-direction: column;
+  }
+  &--center{
+    align-items: center;
+  }
+}
+.mt{
+  margin-top: 50px !important;
+}
+.text{
+  margin: 0;
+  display: block;
+  &--title{
+    font-family: 'Fraunces', serif !important; 
+  }
+  &--center{
+    text-align: center;
+  }
+  &--white{
+    color: $WHITE-COLOR;
+  }
+  &--dark{
+    color: $DARK-BLUE-COLOR;
+  }
+  &--gray{
+    color:  $GRAY-COLOR;
+  }
+  &--graphic-design{
+    color: hsl(167, 40%, 24%);
+  }
+  &--photography{
+    color: hsl(198, 62%, 26%);
+  }
+}

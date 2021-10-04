@@ -1,0 +1,101 @@
+.services{
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    &--reverse{
+        flex-direction: row-reverse;
+    }
+    &__section{
+        width: 50%;
+        height: 100%;
+        &--text{
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            justify-content: center;
+            padding-right: 10%;
+            padding-left: 10%;
+            @media only screen and (min-width: $LG-DESKTOP) {
+                padding-left: 7%;
+                padding-right: 7%;
+            }
+        }
+        &__title{
+            letter-spacing : 0.5px;
+            font-size: 36px;
+            font-weight: 900;
+            line-height: 35px;
+            margin-bottom: 30px !important;
+        }
+        &__text{
+            letter-spacing : 0.5px;
+            font-weight: 600;
+            line-height: 23px;
+            margin-bottom: 35px  !important;
+            font-size: 15px;
+        }
+        &__link{
+            text-transform: uppercase;
+            font-weight: 900;
+            font-size: 14px;
+            letter-spacing: 0.8px;
+            text-decoration: none;
+            display: inline !important;
+            width: 7.2rem;
+            text-align: center;
+            border-radius: 3px;
+            transition: all 0.5s;
+            &--yellow{
+                border-bottom: 5px solid rgba(249, 212, 0, 0.5);    
+                &:hover{
+                    border-bottom: 5px solid rgba(249, 212, 0, 1);
+                    transform: scale(1.05);
+                }
+            }
+            &--pink{
+                border-bottom: 5px solid rgba(254, 120, 102, 0.5);    
+                &:hover{
+                    border-bottom: 5px solid rgba(254, 120, 102, 1);   
+                    transform: scale(1.05);
+                }
+            }
+        }
+        &--background {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            &:nth-child(1){
+                background-image: url('/assets/images/desktop/image-graphic-design.jpg');
+            }
+            &:nth-child(2){
+                background-image: url('/assets/images/desktop/image-photography.jpg');
+            }
+            &__title{
+                font-weight: 900;
+                font-size: 28px;
+                text-align: center;
+                margin-bottom: 25px !important;
+                letter-spacing : 0.5px;
+            }
+            &__text{
+                font-weight: 600;
+                font-size: 15px;
+                line-height: 23px;
+                letter-spacing : 0.5px;
+                margin-bottom: 50px !important;
+                text-align: center;
+                width: 50%;
+            }
+        }
+    }
+
+    &__img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}

@@ -1,0 +1,47 @@
+@import "navbar";
+.header{
+    height: 100vh;
+    width: 100%;
+    background-image: url('/assets/images/desktop/image-header.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    @media only screen and (max-width: $M-PHONE) {
+        height: 90vh;
+        background-image: url('/assets/images/mobile/image-header.jpg');
+    }
+    &__title{
+        font-size: 56px;
+        letter-spacing: 8px;
+        word-spacing: 5px;
+        text-transform: uppercase;
+        font-weight: 900;
+        margin-top: 12vh !important;
+        
+        @media only screen and (min-width: $LG-DESKTOP) {
+            font-size: 62px;
+            margin-top: 16vh !important;
+        }
+        @media only screen and (max-width: $TABLETS) {
+            font-size: 42px;
+            padding-right: 1rem;
+            padding-left: 1rem;
+        }
+        @media only screen and (max-width: $M-PHONE) {
+            font-size: 36px;
+        }
+    }
+    &__arrow{
+        margin-top: 13vh !important;
+        height: 80px;
+        @media only screen and (min-width: $LG-DESKTOP) {
+            height: 100px;
+            margin-top: 16vh !important;
+        }
+        @media only screen and (max-width: $M-PHONE) {
+            height: 120px;
+            margin-top: 10vh !important;
+        }
+    }
+}
+
