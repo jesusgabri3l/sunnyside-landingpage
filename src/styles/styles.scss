@@ -7,6 +7,10 @@
   box-sizing: border-box;
   font-family: 'Barlow', sans-serif;
 }
+body{
+  max-width: 100vw;
+  overflow-x: hidden;
+}
 .flex{
   display: flex;
   &--column{

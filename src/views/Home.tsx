@@ -35,8 +35,7 @@ export default function Home () {
               <img src={standout} alt="Ilustration" className="services__img" />
             </div>
           </article>
-
-          <article className="services">
+          <article className="services services--background">
             <div className="services__section services__section--background">
               <h2 className="text text--graphic-design text--title services__section--background__title">Graphic Design</h2>
               <p className="text text--graphic-design services__section--background__text">

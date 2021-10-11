@@ -2,12 +2,29 @@
     width: 100%;
     height: 65vh;
     display: flex;
+    @media only screen and (max-width: $M-PHONE) {
+        flex-direction: column;
+        height: 100vh;
+        flex-direction: column-reverse;
+    }
     &--reverse{
         flex-direction: row-reverse;
+        @media only screen and (max-width: $M-PHONE) {
+            flex-direction: column-reverse;
+        }
+    }
+    &--background{
+        @media only screen and (max-width: $M-PHONE) {
+            height: 120vh;
+        }
     }
     &__section{
         width: 50%;
         height: 100%;
+        @media only screen and (max-width: $M-PHONE) {
+            width: 100%;
+            height: 50%;
+        }
         &--text{
             display: flex;
             flex-direction: column;
@@ -19,6 +36,11 @@
                 padding-left: 7%;
                 padding-right: 7%;
             }
+            @media only screen and (max-width: $M-PHONE) {
+                width: 100%;
+                align-items: center;
+                justify-content: center;
+            }
         }
         &__title{
             letter-spacing : 0.5px;
@@ -26,6 +48,14 @@
             font-weight: 900;
             line-height: 35px;
             margin-bottom: 30px !important;
+            @media only screen and (min-width: $LG-DESKTOP) {
+                font-size: 40px;
+            }
+            @media only screen and (max-width: $M-PHONE) {
+                text-align: center;
+                line-height: 40px;
+                font-size: 32px;
+            }
         }
         &__text{
             letter-spacing : 0.5px;
@@ -33,6 +63,13 @@
             line-height: 23px;
             margin-bottom: 35px  !important;
             font-size: 15px;
+            @media only screen and (min-width: $LG-DESKTOP) {
+                font-size: 18px;
+            }
+            @media only screen and (max-width: $M-PHONE) {
+                text-align: center;
+                font-size: 14px;
+            }
         }
         &__link{
             text-transform: uppercase;
@@ -45,6 +82,9 @@
             text-align: center;
             border-radius: 3px;
             transition: all 0.5s;
+            @media only screen and (max-width: $M-PHONE) {
+                font-size: 13px;
+            }
             &--yellow{
                 border-bottom: 5px solid rgba(249, 212, 0, 0.5);    
                 &:hover{
@@ -68,11 +108,18 @@
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center center;
+
             &:nth-child(1){
                 background-image: url('/assets/images/desktop/image-graphic-design.jpg');
+                @media only screen and (max-width: $M-PHONE) {
+                    background-image: url('/assets/images/mobile/image-graphic-design.jpg');
+                }   
             }
             &:nth-child(2){
                 background-image: url('/assets/images/desktop/image-photography.jpg');
+                @media only screen and (max-width: $M-PHONE) {
+                    background-image: url('/assets/images/mobile/image-photography.jpg');
+                }  
             }
             &__title{
                 font-weight: 900;
@@ -80,6 +127,14 @@
                 text-align: center;
                 margin-bottom: 25px !important;
                 letter-spacing : 0.5px;
+                @media only screen and (min-width: $LG-DESKTOP) {
+                    font-size: 32px;
+                }
+                @media only screen and (max-width: $M-PHONE) {
+                    font-size: 25px;
+                    margin-bottom: 20px !important;
+
+                } 
             }
             &__text{
                 font-weight: 600;
@@ -89,6 +144,14 @@
                 margin-bottom: 50px !important;
                 text-align: center;
                 width: 50%;
+                @media only screen and (min-width: $LG-DESKTOP) {
+                    font-size: 17px;
+                }
+                @media only screen and (max-width: $M-PHONE) {
+                    font-size: 14px;
+                    width: 80%;
+                    margin-bottom: 30px !important;
+                } 
             }
         }
     }
