@@ -18,7 +18,6 @@ export default function Navbar () {
         <img src={hamburger} alt="hamburger" />
       </button>
       <ul className={`navbar__list ${showNavMenu ? 'active' : ''}`}>
-        <button className="navbar__list__close" type="button" onClick={handleShowNavMenu}>x</button>
         <li className="navbar__list__item">
           <a href="/" className="navbar__list__item__link">About</a>
         </li>
