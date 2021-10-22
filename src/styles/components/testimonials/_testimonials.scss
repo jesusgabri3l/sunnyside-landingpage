@@ -1,13 +1,15 @@
+@import "client";
 .testimonials{
     min-height: 90vh;
     background-color: #FFFBF8;
-    padding: 5rem 5rem 2rem 5rem;
+    padding: 5rem;
     @media only screen and (min-width: $LG-DESKTOP) {
-        min-height: 60vh;
+        min-height: 80vh;
+        padding: 8rem;
     }
     @media only screen and (max-width: $M-PHONE) {
         min-height: 100vh;
-        padding: 3rem 2rem 3rem 2rem;
+        padding: 3rem 2rem 4rem 2rem;
         width: 100vw;
         box-sizing: border-box;
         overflow: hidden;
@@ -35,53 +37,4 @@
             margin-top: 0px;
         }
     }
-}
-.client{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    @media only screen and (max-width: $M-PHONE) {
-        margin-top: 5rem;
-    }
-    &__img{
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        @media only screen and (max-width: $M-PHONE) {
-            width: 90px;
-            height: 90px; 
-        }
-    }
-    &__description{
-        text-align: center;
-        margin: 0;
-        margin-top: 50px;
-        margin-bottom: 50px;
-        color: $GRAY-COLOR;
-        font-weight: 700;
-        line-height: 30px;
-        width: 80%;
-        @media only screen and (max-width: $M-PHONE) {
-            margin-top: 20px;
-            margin-bottom: 20px;
-            width: 100%;
-            font-size: 15px;
-
-        }
-    }
-    &__name{
-        color: $DARK-BLUE-COLOR;
-        font-weight: 900;
-        font-size: 22px;
-        @media only screen and (max-width: $M-PHONE) {
-            font-size: 20px;
-        }
-    }
-    &__position{
-        margin-top: 10px;
-        color: #A7A7A7;
-        font-weight: 700;
-    }
-    
 }
