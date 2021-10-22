@@ -1,13 +1,13 @@
 import React from 'react';
 
-export default function Feature (props: any) {
+export default function Service (props: any) {
   const {
     title, description, img, reverse,
   } = props;
   return (
     <article className={reverse ? 'services services--reverse' : 'services'}>
       <div className="services__section services__section--text">
-        <h2 className="text text--dark text--title services__section__title">{title}</h2>
+        <strong className="text text--dark text--title services__section__title">{title}</strong>
         <p className="text text--gray services__section__text">
           {description}
         </p>
